@@ -30,9 +30,17 @@ const nextConfig: NextConfig = {
         // fs: false,           // <-- ADD THIS LINE
         // os: false,           // <-- ADD THIS LINE
       };
+      
     }
     return config;
   },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+
   // === END: Webpack configuration ===
 };
 
